@@ -9,10 +9,102 @@
     <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
         <fieldset>
             <legend>My Info</legend>
+
+            <p>
+                <label for="first_name_field">First Name: </label>
+                <input type="text" id="first_name_field" name="first_name_field"/>
+            </p>
+
+            <p>
+                <label for="last_name_field">Last Name: </label>
+                <input type="text" id="last_name_field" name="last_name_field" />
+            </p>
+            
+            <p>
+                <label for="phone_field">Phone number:</label>
+                <input type="tel" id="phone_field" name="phone_field" />
+            </p>
+            
+            <p>
+                <label for="email_field">Email: </label>
+                <input type="email" id="email_field" name="email_field" />
+            </p>
+
+            <p>
+                Gender:
+                <input type="radio" id="gender_field_m" name="gender_field" value="Male"/>
+                <label for="gender_field_m">Male</label>
+                <input type="radio" id="gender_field_f" name="gender_field" value="Male"/>
+                <label for="gender_field_f">Female</label>
+            </p>
+
+            <p>
+                <label for="age_field">Age:</label>
+                <select name="age_field" id="age_field">
+                    <option value="under 18">under 18</option>
+                    <option value="18 - 24">18 - 24</option>
+                    <option value="25 - 34">25 - 34</option>
+                    <option value="35 - 44">35 - 44</option>
+                    <option value="45 - 54">45 - 54</option>
+                    <option value="55 - 64">55 - 64</option>
+                    <option value="65 and over">65 and over</option>
+                </select>
+                <br />
+            </p>
         </fieldset>
         <fieldset>
             <legend>My Availability</legend>
+            Days Available:
+
+            <p>
+
+                <label>
+                    <input type="checkbox" value="Sunday" name="available_field[]"/>
+                    Sunday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Monday" name="available_field[]"/>
+                    Monday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Tuesday" name="available_field[]"/>
+                    Tuesday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Wednesday" name="available_field[]"/>
+                    Wednesday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Thursday" name="available_field[]"/>
+                    Thursday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Friday" name="available_field[]"/>
+                    Friday
+                </label>
+                <br />
+
+                <label>
+                    <input type="checkbox" value="Saturday" name="available_field[]"/>
+                    Saturday
+                </label>
+            </p>
+
+            <label for="comments_field">Comments: </label><br />
+            <textarea id="comments_field" name="comments_field" rows="10"></textarea>
         </fieldset>
+
+        <input type="hidden" value="gsteduto" name="hidden_field">
 
         <input type="submit" value="Send me" />
     </form>
